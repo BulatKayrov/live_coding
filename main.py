@@ -75,10 +75,12 @@ if __name__ == "__main__":
         worker_generate_schedule, 2
     )
     logger.info(queue)
-    Scheduler(date=datetime.datetime(day=16, month=8, year=2025)).run(
+    Scheduler(date=datetime.datetime(day=23, month=8, year=2025)).run(
         worker_employees_notice
     )
-    Scheduler(date=datetime.datetime(day=16, month=8, year=2025)).run(
+    Scheduler(date=datetime.datetime(day=30, month=8, year=2025)).run(
         worker_change_schedule
     )
     logger.info(queue)
+
+# У меня есть вопрос по видео-консультаций из резюме. Правильно ли я понимаю что fastapi нужен фактически чтобы к примеру создавать комнаты для
